@@ -1,8 +1,8 @@
 (library
-  (name flow_parser)
-  (wrapped false)
-  (modules (:standard \ flow_parser_js flow_parser_dot_js))
-  (libraries
-    sedlex
-    wtf8)
-  (preprocess (pps ppx_gen_rec ppx_deriving.std sedlex.ppx)))
+ (name flow_parser)
+ (public_name flow_parser)
+ (modules
+  (:standard \ flow_parser_js flow_parser_dot_js))
+ (libraries sedlex wtf8 ppx_deriving.runtime)
+ (preprocess
+  (pps ppx_gen_rec ppx_deriving.std sedlex.ppx)))
