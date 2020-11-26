@@ -4,14 +4,12 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *)
-
-[%%gen
 (*
  * An Ocaml implementation of the SpiderMonkey Parser API
  * https://developer.mozilla.org/en-US/docs/SpiderMonkey/Parser_API
  *)
 
-module rec Syntax : sig
+module%gen rec Syntax : sig
   type ('M, 'internal) t = {
     leading: 'M Comment.t list;
     trailing: 'M Comment.t list;
@@ -1863,4 +1861,4 @@ and Program : sig
   }
   [@@deriving show]
 end =
-  Program]
+  Program
