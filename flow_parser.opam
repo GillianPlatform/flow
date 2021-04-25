@@ -1,6 +1,6 @@
 opam-version: "2.0"
 name: "flow_parser"
-version: "0.138.0"
+version: "0.149.0"
 maintainer: "flow@fb.com"
 authors: ["Flow Team <flow@fb.com>"]
 homepage: "https://github.com/facebook/flow/tree/master/src/parser"
@@ -9,12 +9,12 @@ license: "MIT"
 
 build: [ "dune" "build" "-p" name "-j" jobs ]
 depends: [
-  "ocaml" {>= "4.07.1"}
+  "ocaml" {>= "4.09.1"}
   "ocamlfind" {build}
   "ocamlbuild" {build}
   "ppx_deriving" {build}
   "ppx_gen_rec" {build}
-  "sedlex" {= "2.1"}
+  "sedlex" {>= "2.1"}
   "wtf8"
 ]
 dev-repo: "git+https://github.com/facebook/flow.git"

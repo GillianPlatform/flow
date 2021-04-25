@@ -39,9 +39,9 @@ For a background on the project, please read [this overview](https://flow.org/en
 
 Flow works with:
 
-* macOS
-* Linux (64-bit)
-* Windows (64-bit, Windows 10 recommended)
+* macOS (x86_64)
+* Linux (x86_64 and arm64)
+* Windows (x86_64, Windows 10 recommended)
 
 There are [binary distributions](https://github.com/facebook/flow/releases) for each of these platforms and you can also build it from source on any of them as well.
 
@@ -57,7 +57,7 @@ Flow-typed JavaScript can use this to generate Flow's syntax tree with annotated
 
 ## Building Flow from source
 
-Flow is written in OCaml (OCaml 4.07.1 is required).
+Flow is written in OCaml (OCaml 4.09.1 is required).
 
 1. Install [`opam`](https://opam.ocaml.org):
 
@@ -101,7 +101,7 @@ Flow is written in OCaml (OCaml 4.07.1 is required).
 6. Build `flow.js` (optional):
 
   ```sh
-  opam install -y js_of_ocaml.3.4.0
+  opam install -y js_of_ocaml.3.7.1
   make js
   ```
 
