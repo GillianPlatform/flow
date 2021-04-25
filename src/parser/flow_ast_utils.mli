@@ -57,8 +57,8 @@ val mk_comments_opt :
   ('loc, unit) Flow_ast.Syntax.t option
 
 val mk_comments_with_internal_opt :
-  ?leading:'loc Flow_ast.Comment.t list ->
-  ?trailing:'loc Flow_ast.Comment.t list ->
+  leading:'loc Flow_ast.Comment.t list ->
+  trailing:'loc Flow_ast.Comment.t list ->
   internal:'loc Flow_ast.Comment.t list ->
   ('loc, 'loc Flow_ast.Comment.t list) Flow_ast.Syntax.t option
 

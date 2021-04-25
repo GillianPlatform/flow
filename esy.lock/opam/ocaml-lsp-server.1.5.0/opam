@@ -1,7 +1,7 @@
 opam-version: "2.0"
 synopsis: "LSP Server for OCaml"
 description: "An LSP server for OCaml."
-maintainer: ["Rudi Grinberg <me@rgrinerg.com>"]
+maintainer: "Rudi Grinberg <me@rgrinerg.com>"
 authors: [
   "Andrey Popp <8mayday@gmail.com>"
   "Rusty Key <iam@stfoo.ru>"
@@ -25,26 +25,19 @@ depends: [
   "result" {>= "1.5"}
   "ocamlformat" {with-test}
   "ocamlfind" {>= "1.5.2"}
-  "ocaml" {>= "4.06" & < "4.12"}
+  "odoc" {with-doc}
+  "ocaml" {>= "4.12" & < "4.13"}
 ]
-dev-repo: "git+https://github.com/ocaml/ocaml-lsp.git"
 build: [
   ["dune" "subst"] {dev}
-  [
-    "dune"
-    "build"
-    "-j"
-    jobs
-    "ocaml-lsp-server.install"
-    "--release"
-  ]
+  ["dune" "build" "-j" jobs "ocaml-lsp-server.install" "--release"]
 ]
-x-commit-hash: "47d01696d197f0980b6a43d92549a917357b835f"
+dev-repo: "git+https://github.com/ocaml/ocaml-lsp.git"
 url {
   src:
-    "https://github.com/ocaml/ocaml-lsp/releases/download/1.3.0/jsonrpc-1.3.0.tbz"
+    "https://github.com/ocaml/ocaml-lsp/releases/download/1.5.0/jsonrpc-1.5.0.tbz"
   checksum: [
-    "sha256=598e27258e4749b6e2511e2c5efe00d16f0965806296e808d202cd614d655fba"
-    "sha512=febe80f8a88fac7683cafbd045dceee4869beda1f250b78a1d94d3ad19e746388d24869e805abcb2f33f93687508d65db19a38424c1059670915c050b4f6dbb9"
+    "md5=2c19731536a4f62923554c1947c39211"
+    "sha512=9bc252e2564fe6c9017b5ee1b2c4ddebf73c4be4b2a3d48f1d61b6ec1910a2cb9f4fa4952a7a6d89482c28ddbad8e0d9c34c206a1b2fe42bb2c3a7156aa953e9"
   ]
 }

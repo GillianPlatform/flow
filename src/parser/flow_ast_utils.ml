@@ -85,7 +85,7 @@ let mk_comments_opt ?(leading = []) ?(trailing = []) () =
   | ([], []) -> None
   | (_, _) -> Some (mk_comments ~leading ~trailing ())
 
-let mk_comments_with_internal_opt ?(leading = []) ?(trailing = []) ~internal =
+let mk_comments_with_internal_opt ~leading ~trailing ~internal =
   match (leading, trailing, internal) with
   | ([], [], []) -> None
   | _ -> Some (mk_comments ~leading ~trailing internal)
