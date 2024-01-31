@@ -18,7 +18,7 @@
     "@opam/ppx_deriving": ">=5.2",
     "@opam/sedlex": ">=2.3",
     "@opam/wtf8": "*",
-    "ocaml": "^4.07.1"
+    "ocaml": ">=4.07.1"
   },
   "devDependencies": {
     "ocaml": "4.13.x",
