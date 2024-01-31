@@ -14,7 +14,7 @@
   "dependencies": {
     "@opam/ppxlib": ">=0.18.0",
     "@opam/dune": "^2.9",
-    "@opam/ppx_gen_rec": "2.0.0",
+    "@opam/ppx_gen_rec": "^2.0.0",
     "@opam/ppx_deriving": ">=5.2",
     "@opam/sedlex": ">=2.3",
     "@opam/wtf8": "*",
